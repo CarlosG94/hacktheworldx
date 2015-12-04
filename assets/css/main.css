@@ -1,0 +1,152 @@
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,300);
+
+/*========================         Tags        ========================*/
+
+html{
+  height: 100%;
+}
+
+body {
+	margin: 0;
+	min-height: 100%;
+	padding: 0;
+	/*background-color: #D32F2F;*/
+	/*background:  url(../img/hack.jpg) no-repeat center center fixed;*/
+	background-size: cover;
+	font-family: 'Open Sans', sans-serif;
+}
+
+/* Disable ugly boxes around images in IE10 */
+a img{
+  border: 0px;
+}
+
+/*========================      Special      ========================*/
+
+::-moz-selection {
+  background-color: #6ab344;
+  color: #fff;
+}
+
+::selection {
+  background-color: #D32F2F;
+  color: #fff;
+}
+
+/*========================      Classes      ========================*/
+
+.header {
+  overflow: visible;
+  background-color: white;
+}
+
+.header .material-icons {
+    color: #767777 !important;
+}
+
+.header .mdl-layout__drawer-button {
+    background: transparent;
+    color: #767777;
+}
+
+.header .mdl-navigation__link {
+    color: #757575;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.header .mdl-menu__container {
+  z-index: 50;
+  margin: 0 !important;
+}
+
+.header {
+  overflow: visible;
+  background-color: white;
+}
+
+
+.mobile-title {
+  display: none !important;
+}
+
+.logo-image {
+  height: 40px;
+  width: 140px;
+}
+
+.navigation {
+    /* ... and now make sure the content is actually LTR */
+    direction: ltr;
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    width: 800px;
+}
+
+.navigation .mdl-navigation__link {
+    display: inline-block;
+    height: 50px;
+    line-height: 48px;
+    background-color: transparent;
+    border-bottom: 4px solid transparent;
+  }
+
+  .navigation .mdl-navigation__link:hover {
+      border-bottom: 4px solid #D32F2F;
+    }
+
+ .login-button {
+    color: #424242;
+    margin-top: -2px;
+    display: inline-block;
+    height: 38px;
+    line-height: 38px;
+    border-bottom: 4px solid transparent;
+    background-color: rgb(0,0,0,.7);
+ }
+
+  .login-button:hover{
+      background-color: #F44336;
+      color:#fff;
+    }
+
+     .more-button {
+    -webkit-box-ordinal-group: 4;
+    -webkit-order: 3;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+
+
+/* CUSTOM CLASSES */
+
+
+
+/*========================          ID's         ========================*/
+
+
+
+/*======================== Mobile Layout ========================*/
+
+@media (max-width: 900px) {
+  .navigation-container {
+    display: none;
+  }
+
+   .title {
+    display: none !important;
+  }
+
+  .mobile-title {
+    display: block !important;
+    position: absolute;
+    left: calc(50% - 70px);
+    top: 12px;
+    -webkit-transition: opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+            transition: opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+}
