@@ -83,13 +83,13 @@ a img{
     -webkit-justify-content: flex-end;
         -ms-flex-pack: end;
             justify-content: flex-end;
-    width: 800px;
+    width: 100%;
 }
 
 .navigation .mdl-navigation__link {
     display: inline-block;
-    height: 50px;
-    line-height: 48px;
+    height: 60px;
+    line-height: 58px;
     background-color: transparent;
     border-bottom: 4px solid transparent;
   }
@@ -120,6 +120,20 @@ a img{
             order: 3;
   }
 
+.slogan {
+  font-size: 60px;
+  padding-top: 160px;
+}
+
+.sub-slogan {
+  font-size: 21px;
+  padding-top: 24px;
+}
+
+.content {
+	height: 9000px;
+}
+
 
 /* CUSTOM CLASSES */
 
@@ -147,6 +161,18 @@ a img{
     top: 12px;
     -webkit-transition: opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1);
             transition: opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .slogan {
+    font-size: 26px;
+    margin: 0 16px;
+    padding-top: 24px;
+  }
+
+  .sub-slogan {
+    font-size: 16px;
+    margin: 0 16px;
+    padding-top: 8px;
   }
 
 }
